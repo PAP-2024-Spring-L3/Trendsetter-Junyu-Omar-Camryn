@@ -45,3 +45,14 @@ nav a:hover::before {
     border: 2px solid #f4f6f2; 
     border-radius: 5px; 
 }
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 31, 177);
+    padding: 50px;
+    width:945px;;
+    color: white;
+    text-align: center;
+  }
