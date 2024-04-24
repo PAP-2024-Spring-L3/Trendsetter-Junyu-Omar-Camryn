@@ -48,6 +48,18 @@ nav a:hover::before {
     border-radius: 5px; 
 }
 
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 31, 177);
+    padding: 50px;
+    width:945px;;
+    color: white;
+    text-align: center;
+  }
+
 main{
     background-color:#000831;
     color: white;
