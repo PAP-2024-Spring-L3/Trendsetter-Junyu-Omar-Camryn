@@ -1,0 +1,29 @@
+main{
+    background-color:#170021;
+    color: white;
+    display:inline-block;
+    width:100%;
+}
+
+h1{
+    font-size: 80px;
+    margin-bottom:0px;
+    margin-left: 45px;
+    font-family: "bebas neue";
+
+}
+p1{
+    font-size: 30px;
+    width: 800px;
+    margin-top:0px;
+    margin-left:45px;
+    font-family:"Montserrat";
+}
+
+#hero-slides{
+    width: 650px;
+    height: 400px;
+    background-color:antiquewhite;
+    margin-left: 46%;
+    margin-top:5%
+}
