@@ -37,8 +37,40 @@ function showSlides() {
       slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
+    
+ if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
   }
   //Slide show ends
+
+  // netflix slider
+
+const sliders = document.querySelector(".netflixcarouselbox");
+var scrollPerClick;
+var ImagePadding = 20;
+
+showGameData();
+
+  var scrollAmount =0;
+
+  function sliderScrollLeft(){
+    sliders.scrollTo({
+      top:0,
+      left:(scrollAmount -= scrollPerClick),
+      behavior:"smooth",
+    });
+    if(scrollAmount<0){
+      scrollAmount= 0
+    }
+  }
+  function sliderScrollRight(){
+     
+      if(scrollAmount <= sliders.scrollWidth-sliders.clientWidth){
+        sliders.scrollTo({
+          top:0,
+          left:(scrollAmount+=scrollPerClick),
+          behavior:"smooth"
+        });
+      }
+  }
