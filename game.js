@@ -28,7 +28,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
+let timer = 5000; 
 //automatic slide show
 function showSlides() {
     let i;
