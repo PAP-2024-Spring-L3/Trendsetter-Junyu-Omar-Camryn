@@ -1,0 +1,46 @@
+ /*Navigation bar*/
+ header {
+    background-color: #0e0312;
+    box-shadow: 0px 0px 20px rgb(70, 31, 177);
+    height: 80px;
+    width: 100%;
+}
+.navbar {
+    width: 95%;
+    height: 80px;
+    margin: auto;
+}
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav a {
+    font-family: "Merriweather Sans", sans-serif;
+    color: #f1eded;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 19px;
+    position: relative;
+}
+nav a:hover::before {
+    content: ""; 
+    position: absolute;
+    left: -15px; 
+    top: -15px; 
+    right: -15px; 
+    bottom: -15px; 
+    border: 2px solid #f4f6f2; 
+    border-radius: 5px; 
+}
