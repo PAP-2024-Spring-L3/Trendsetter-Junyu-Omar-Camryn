@@ -1,3 +1,4 @@
+
 /* Color Pallete 
 #0F142B-Main Page Background Color
 000831-possible swap to*/
@@ -48,6 +49,18 @@ nav a:hover::before {
     border-radius: 5px; 
 }
 
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 31, 177);
+    padding: 50px;
+    width:1348px;;
+    color: white;
+    text-align: center;
+  }
+
 main{
     background-color:#000831;
     color: white;
@@ -60,7 +73,7 @@ main{
     margin-bottom:0px;
     margin-left: 45px;
     font-family: "bebas neue";
-    
+
 }
 #subtext{
     font-size: 30px;
@@ -70,20 +83,11 @@ main{
     font-family:"Montserrat";
 }
 .home-boxes{
-    width: 400px;
+    width: 300px;
     height: 200px;
     background-color:white;
     color: black;
-    display:inline;
+    margin: 90px;
+    display:inline-block;
     font-family:"Montserrat";
 }
-
-.footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(70, 31, 177);
-    padding: 50px;
-    color: white;
-    text-align: center;
-  }
