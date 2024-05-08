@@ -259,13 +259,13 @@
   
   /*footer*/
   .footer {
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: rgb(70, 31, 177);
-      width:2064px;
-      color: white;
-      text-align: center;
+    clear:both;
+        position: fixed;
+        background: #cfc8c0;
+        height: 46px;
+        overflow: hidden;
+        display: block;
+        bottom:0; width:100%
     }
   /*footer ends*/
 .logo {
