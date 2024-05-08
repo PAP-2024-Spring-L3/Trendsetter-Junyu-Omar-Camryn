@@ -97,6 +97,9 @@ main{
     color:Black;
     text-align: center;
     text-shadow: 2px 2px rgb(185, 127, 185);
+    border-style: outset;
+    border-width: 10px;
+    border-color: #4e006a;
 }
 #box1{
     background-image:image-set("images-sports/");
@@ -115,7 +118,16 @@ main{
     background-image: url("images-game/valorant.jpg");
 }
 
-/* .play-button{
+.play-button{
     width:150px;
-    color: purple;
-} */
+    color: darkorchid;
+}
+.home-boxes > h2{
+    margin-bottom:10px;
+}
+.home-boxes > p{
+    font-size: 80px;
+    color:rgb(42, 4, 31);
+    text-shadow: 2px 2px darkorchid;
+    margin-top: 0px;;
+}
