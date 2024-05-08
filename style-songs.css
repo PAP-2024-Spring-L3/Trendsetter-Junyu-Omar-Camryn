@@ -11,7 +11,6 @@ body{
     flex-wrap: wrap;
     font-family: var(--fontOne);
     background-color:#170021;
-
 }
 
 h1{
@@ -179,7 +178,6 @@ h1{
     height: 250px;
     width: 80%;
     position: relative;
-    background-color: #101523;
     bottom: 200px;
   }
   .netflix-carousel .switchleft, .netflix-carousel .switchright{
