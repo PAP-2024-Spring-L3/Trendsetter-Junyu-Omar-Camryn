@@ -93,13 +93,17 @@ main{
     margin-top:100px;
     display:inline-block;
     font-family:"Bebas Neue";
-    font-size:35px;
+    font-size:40px;
     color:Black;
     text-align: center;
     text-shadow: 2px 2px rgb(185, 127, 185);
     border-style: outset;
     border-width: 10px;
-    border-color: #4e006a;
+    border-color: #1f2437;
+}
+.home-boxes:hover{
+    border-style:groove;
+    border-color:rgb(104, 0, 179);
 }
 #box1{
     background-image:image-set("images-sports/");
@@ -123,11 +127,11 @@ main{
     color: darkorchid;
 }
 .home-boxes > h2{
-    margin-bottom:10px;
+    margin-bottom:20px;
 }
-.home-boxes > p{
+/* .home-boxes > p{
     font-size: 80px;
     color:rgb(42, 4, 31);
     text-shadow: 2px 2px darkorchid;
     margin-top: 0px;;
-}
+} */
