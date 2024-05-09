@@ -1,55 +1,84 @@
+main{
+  background-color:#000831;
+  color: white;
+  /* display:inline-block; */
+  width:100%;
+}
+header {
+  background-color: #0e0312;
+  box-shadow:rgb(70, 31, 177);
+  height: 100px;
+}
+.navbar {
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-top: 5px;
+  display: inline-block;
+  margin-left: 60px;
+  padding-top: 5.5%;
+}
+
+nav a {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #f1eded;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+}
+nav a:hover::before {
+  content: ""; 
+  position: absolute;
+  left: -15px; 
+  top: -15px; 
+  right: -15px; 
+  bottom: -15px; 
+  border: 2px solid #f4f6f2; 
+  border-radius: 5px; 
+}
+
+body{
+  height: 100vh;
+  width:100%;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: var(--fontOne);
+  background-color:#170021;
+}
+
+h1{
+  font-size: 100px;
+  margin-bottom:0px;
+  margin-left: 100px;
+  font-family: "bebas neue";
+  margin-top: 100px;
+
+}
+#paragraph{
+  font-size: 35px;
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left:100px;
+  font-family:"Montserrat";
+  width:800px;
+}
 * {
   margin:0;
   padding: 0;
 }
-/*Navigation bar*/
-header {
-    background-color: #0e0312;
-    box-shadow: 0px 0px 20px rgb(70, 31, 177);
-    height: 100px;
-}
-.navbar {
-    width: 95%;
-    height: auto;
-    margin: auto;
-}
-nav {
-    float: right;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    margin-top: 5px;
-    display: inline-block;
-    margin-left: 60px;
-    padding-top: 5.5%;
-}
-
-nav a {
-    font-family: "Merriweather Sans", sans-serif;
-    color: #f1eded;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    position: relative;
-}
-nav a:hover::before {
-    content: ""; 
-    position: absolute;
-    left: -15px; 
-    top: -15px; 
-    right: -15px; 
-    bottom: -15px; 
-    border: 2px solid #f4f6f2; 
-    border-radius: 5px; 
-}
-
-/*navigation bar codes end*/
 
 /*variables*/
 :root {
@@ -66,12 +95,6 @@ body{
   font-family: var(--fontOne);
 }
 
-/*main*/
-main{
-    background-color:#000831 ;
-}
-/*main ends*/
-
 /*Slideshow/carousel*/
 * {box-sizing:border-box}
 
@@ -80,8 +103,16 @@ main{
   max-width: 750px;
   position: relative;
   margin: auto;
+  left: 450px;
+  bottom:250px;
 }
-
+#dotties{
+  position: relative;
+  text-align: center;
+  left:450px;
+  bottom:250px;
+  margin-bottom: 0px;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -174,10 +205,289 @@ main{
   line-height: 14px;
   font-weight: 500;
   margin: 0 4% 12px; 
+  margin-left: 100px;
+  margin-bottom: 60px;
 }
 /*h2 tags for netflix sliders end */
 
 /* netflix carousel*/
+.netflix{
+  height: 30vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top:0px;
+}
+.netflix-carousel{
+  height: 250px;
+  width: 80%;
+  position: relative;
+  bottom: 200px;
+}
+.netflix-carousel .switchleft, .netflix-carousel .switchright{
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #7B6386;
+  font-family: sans-serif;
+  top: 0;
+  z-index: 3;
+}
+
+.netflix-carousel .switchleft{
+  position: absolute;
+  left: -50px;
+}
+
+.netflix-carousel  .switchright{
+  position: absolute;
+  right: -50px;
+ 
+}
+.netflixcarouselbox{
+  height: 250px;
+  width: auto;
+  overflow:scroll;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+  
+}
+.netflixcarouselbox img{
+  min-width: 200px;
+  max-width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-color: lightgreen;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+
+}
+.netflixcarouselbox img:hover{
+  transform: scale(1.4);
+  z-index: 5;
+}
+
+
+/*footer*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 31, 177);
+    padding: 50px;
+    width:2564px;;
+    color: white;
+    text-align: center;
+  }
+
+/*
+* {
+  margin:0;
+  padding: 0;
+}
+/*Navigation bar*/
+/*
+header {
+    background-color: #0e0312;
+    box-shadow: 0px 0px 20px rgb(70, 31, 177);
+    height: 100px;
+}
+.navbar {
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 5.5%;
+}
+
+nav a {
+    font-family: "Merriweather Sans", sans-serif;
+    color: #f1eded;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+}
+nav a:hover::before {
+    content: ""; 
+    position: absolute;
+    left: -15px; 
+    top: -15px; 
+    right: -15px; 
+    bottom: -15px; 
+    border: 2px solid #f4f6f2; 
+    border-radius: 5px; 
+}
+
+/*navigation bar codes end*/
+
+/*variables*/
+/*
+:root {
+  --fontOne:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*variables end*/
+
+/*body*/
+/*
+body{
+  height: 100vh;
+  width:100%;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: var(--fontOne);
+}
+
+/*main*/
+/*
+main{
+    background-color:#000831 ;
+}
+/*main ends*/
+
+/*Slideshow/carousel*/
+/*
+* {box-sizing:border-box}
+
+/* Slideshow container */
+/*
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+/*
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+/*
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+/*
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/*
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+/*
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/*
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+/*
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+/*
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*slideshow/carousel code ends*/
+
+/*h2 tags for netflix sliders*/
+/*
+.titlesection{
+  padding-top: 3%;
+  color:#e5e5e5;
+  font-family: var(--fontOne);
+}
+.title{
+  font-size: 24px;
+  line-height: 14px;
+  font-weight: 500;
+  margin: 0 4% 12px; 
+}
+/*h2 tags for netflix sliders end */
+
+/* netflix carousel*/
+/*
 .netflix{
   height: 30vh;
   width:100%;
@@ -249,6 +559,7 @@ main{
 
 
 /*footer*/
+/*
 .footer {
     left: 0;
     bottom: 0;
